@@ -1,4 +1,5 @@
 import "package:blogg_app/Pages/HomePage.dart";
+import "package:blogg_app/components/custom_button.dart";
 import "package:blogg_app/components/custom_textfeild.dart";
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
@@ -13,6 +14,10 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final usernameController = TextEditingController();
   final passwordCOntroller = TextEditingController();
+
+  void signUserIn(){
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,30 +70,12 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   //login button
-                  ElevatedButton(
-                    child: const Text("Log In",
-                        style: TextStyle(color: Colors.black)),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 32, vertical: 12),
-                    ),
-                    onPressed: () {},
-                  ),
+                  MyButton(btn_name: "Log In", onTap: signUserIn),
 
                   const SizedBox(width: 20), // spacing between the buttons
 
                   //register button
-                  ElevatedButton(
-                    child: const Text("Register",
-                        style: TextStyle(color: Colors.black)),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 32, vertical: 12),
-                    ),
-                    onPressed: () {},
-                  ),
+                  MyButton(btn_name: "Register")
                 ],
               ),
 
