@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659440211201",
+    "project_id": "blog-app-cccfb",
+    "storage_bucket": "blog-app-cccfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659440211201:android:9c99faf56ab350da163700",
+        "android_client_info": {
+          "package_name": "com.example.blogg_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjbaNInRcSbfVaiEnB71aNct-0BpvXA58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
