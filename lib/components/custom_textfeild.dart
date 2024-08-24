@@ -21,7 +21,7 @@ class MyTextFeild extends StatelessWidget {
         controller: conttroller,
         obscureText: secureText,
         decoration: InputDecoration(
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.grey)
             ),
             fillColor: Colors.grey.shade200,

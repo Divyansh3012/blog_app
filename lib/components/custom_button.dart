@@ -20,7 +20,7 @@ class MyButton extends StatelessWidget {
         decoration: BoxDecoration(color: Colors.blue,
         borderRadius: BorderRadius.circular(20)),
         child: Center(
-            child: Text(btn_name, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold), )
+            child: Text(btn_name, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold), )
         ),
       ),
     );

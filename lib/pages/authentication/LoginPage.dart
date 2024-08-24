@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final usernameController = TextEditingController();
   final passwordCOntroller = TextEditingController();
 
-  void signUserIn(){
+  void signUserIn() {
 
   }
 
@@ -70,7 +70,9 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   //login button
-                  MyButton(btn_name: "Log In", onTap: signUserIn),
+                  MyButton(btn_name: "Log In", onTap: () {
+                    Navigator.push(context, HomePage() as Route<Object?>);
+                  }),
 
                   const SizedBox(width: 20), // spacing between the buttons
 
@@ -105,7 +107,8 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 140, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 140, vertical: 12),
                     child: Image.asset('images/google.png', height: 100,),
                   )
                 ],
