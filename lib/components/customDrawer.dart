@@ -1,3 +1,4 @@
+import 'package:blogg_app/pages/profile.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -31,7 +32,7 @@ class MyDrawer extends StatelessWidget {
               leading: Icon(Icons.account_circle_rounded),
               title: Text("P R O F I L E"),
               onTap: (){
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
               },
             ),
           ),
